@@ -1,8 +1,30 @@
 # Code for "Bayesian shared frailty models for interval-censored survival data in Stan"
 
-Supplementary code. All results in the paper and the Supplementary Material
-are produced by the scripts below. Each R script states at its top what it
-does, how it is run, and what it writes.
+Stan programs and R scripts for
+
+> Kim, J. (2026). Bayesian shared frailty models for interval-censored
+> survival data in Stan. *Communications for Statistical Applications and
+> Methods*, in press.
+
+All results in the paper and its Supplementary Material are produced by the
+scripts below. Each R script states at its top what it does, how it is run,
+and what it writes.
+
+## Citation
+
+If you use this code, please cite the paper:
+
+```bibtex
+@article{Kim2026CSAM,
+  author  = {Kim, Jinheum},
+  title   = {Bayesian shared frailty models for interval-censored survival data in {Stan}},
+  journal = {Communications for Statistical Applications and Methods},
+  year    = {2026},
+  note    = {In press}
+}
+```
+
+Volume, issue, pages and DOI will be added on publication.
 
 ## Software
 
@@ -129,3 +151,9 @@ On a 12-core Linux server (Ubuntu 24.04), shared with other users:
 | `weibull_lognormal_priorvar.stan` | as `weibull_lognormal_frailty_ic.stan`, prior on sigma_b selected by `prior_id` |
 | `sim_pwe_tdc.stan` | simulation: piecewise exponential, time-varying covariate, delayed entry |
 | `sim_isp_tdc.stan` | simulation: I-spline, time-varying covariate, delayed entry |
+
+## Contact
+
+Jinheum Kim, Department of Applied Statistics, University of Suwon.
+Questions and bug reports are welcome through the Issues tab of this
+repository.
